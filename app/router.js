@@ -10,4 +10,5 @@ module.exports = app => {
   } = app;
   router.get('/', controller.home.index);
   router.post('/userInfo', controller.user.getUserInfo)
+  router.get('/getCode', controller.scan.getCode)
 };
