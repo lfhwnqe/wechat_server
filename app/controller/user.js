@@ -4,10 +4,9 @@ const Controller = require('egg').Controller;
 
 class UserController extends Controller {
     async getUserInfo() {
-        const data = this.ctx.request.body
-        console.log('data is back==>>', data)
+        // const data = this.ctx.request.body
         this.ctx.body = {
-            data
+            msg:'hello world'
         }
     }
 }
