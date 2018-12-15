@@ -9,6 +9,7 @@ module.exports = app => {
     controller
   } = app;
   router.get('/', controller.home.index)
-  router.get('/userInfo', controller.user.getUserInfo)
+  router.post('/userInfo', controller.user.getUserInfo)
   router.get('/getCode', controller.scan.getCode)
+  router.post('/wxLogin',controller.user.wxLogin)
 };
